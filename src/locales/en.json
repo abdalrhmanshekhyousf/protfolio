@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Abdalrhman Shekh Yousf — Full-Stack Developer",
+    "description": "Portfolio of Abdalrhman Shekh Yousf: complete, Arabic-first systems — Bunyan, Nabd, Modir, Golden School."
+  },
+  "nav": { "home": "Home", "projects": "Projects", "skills": "Skills", "about": "About", "contact": "Contact", "menu": "Menu", "close": "Close" },
+  "a11y": { "toLight": "Switch to light mode", "toDark": "Switch to dark mode", "switchLang": "التبديل للعربية", "skip": "Skip to content", "progress": "Reading progress" },
+  "hero": {
+    "hello": "Hi, I'm",
+    "name": "Abdalrhman Shekh Yousf",
+    "typing": ["Full-Stack Developer", "React", "Node.js", "AI-powered systems"],
+    "bio": "I build complete web systems from idea to deployment: fast Arabic-first interfaces, reliable backends, and AI that actually helps the user.",
+    "cta": "My work",
+    "github": "GitHub",
+    "stats": { "projects": "shipped projects", "commits": "commits", "tech": "technologies" },
+    "graph": "Project map"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Four real platforms, each solving a clear problem.",
+    "live": "Live preview",
+    "repo": "GitHub",
+    "noLive": "No public link — video tour",
+    "hoverHint": "Hover to play the preview"
+  },
+  "skills": { "title": "Skills", "subtitle": "The tools I work with every day." },
+  "about": {
+    "title": "About",
+    "body": "I'm Abdalrhman, a full-stack developer who loves building whole systems, not just pages. I've worked on platforms for hospitals, shops and schools, and on a tool that turns a system description into requirements and diagrams using AI. I care about the details: proper RTL, performance and security.",
+    "points": [
+      { "title": "Arabic first", "text": "Every interface is designed right-to-left from day one, not translated as an afterthought." },
+      { "title": "Complete systems", "text": "From the database and permissions to the UI and deployment." },
+      { "title": "Secure & reliable", "text": "Precise access rules, real-time data, and an experience that doesn't let users down." }
+    ]
+  },
+  "contact": {
+    "title": "Let's work together",
+    "subtitle": "Got an idea or a job opportunity? Message me and I'll reply soon.",
+    "cta": "Email me",
+    "copy": "Copy email",
+    "copied": "Copied ✓"
+  },
+  "footer": { "rights": "All rights reserved", "built": "Built with React, Tailwind & Motion" }
+}

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #0b5d63;
+  --color-brand-light: #11858d;
+  --color-brand-glow: #3fb8bf;
+  --color-brand-deep: #083b40;
+  --color-accent: #ff7a4d;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-ar-head: "Noto Kufi Arabic", sans-serif;
+  --font-ar-body: "IBM Plex Sans Arabic", sans-serif;
+  --font-en: "Poppins", sans-serif;
+}
+
+:root { --bg:#ffffff; --surface:#f6fafa; --ink:#15181c; --muted:#5b6470; --line:#d9e2e3; --tint:#0b5d63; }
+.dark { --bg:#0b1416; --surface:#0f1c1f; --ink:#e9eef0; --muted:#9aa8ad; --line:#1f3336; --tint:#3fb8bf; }
+@theme inline { --color-tint: var(--tint); }
+
+html { scroll-behavior: smooth; background: var(--bg); color: var(--ink); }
+html[lang="ar"] body { font-family: var(--font-ar-body); }
+html[lang="ar"] :is(h1, h2, h3) { font-family: var(--font-ar-head); }
+html[lang="en"] body { font-family: var(--font-en); }
+body { background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+section[id] { scroll-margin-top: 5rem; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: 6px; }
+::selection { background: var(--color-accent); color: #fff; }
+
+/* task 45: circular theme reveal */
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--tint) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--tint) 12%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
