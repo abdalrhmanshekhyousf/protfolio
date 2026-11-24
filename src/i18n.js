@@ -27,7 +27,7 @@ const applyDir = (lng) => {
   document.title = title;
   document.querySelector('meta[name="description"]')?.setAttribute('content', i18n.t('meta.description', { lng: l }));
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-  document.querySelector('meta[property="og:image"]')?.setAttribute('content', `/og-${l}.png`);
+  document.querySelector('meta[property="og:image"]')?.setAttribute('content', `${location.origin}/og-${l}.png`);
 };
 // task 60: hreflang alternates
 ['ar', 'en'].forEach((l) => {
