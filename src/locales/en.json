@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Abdalrhman Shekh Yousf — Front-End Developer",
-    "description": "Portfolio of Abdalrhman Shekh Yousf: Arabic-first web interfaces — Bunyan, Nabd, Modir, Golden School."
+    "description": "Portfolio of Abdalrhman Shekh Yousf: Arabic-first web interfaces — Data Analytics, Nabd, Modir, Golden School."
   },
   "nav": { "home": "Home", "projects": "Projects", "skills": "Skills", "about": "About", "contact": "Contact", "menu": "Menu", "close": "Close" },
   "a11y": { "toLight": "Switch to light mode", "toDark": "Switch to dark mode", "switchLang": "التبديل للعربية", "skip": "Skip to content", "progress": "Reading progress" },

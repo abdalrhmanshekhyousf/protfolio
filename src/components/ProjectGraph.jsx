@@ -51,13 +51,23 @@ export default function ProjectGraph({ label }) {
           style={{ originX: `${n.x}px`, originY: `${n.y}px` }}
         >
           <motion.circle
-            cx={n.x} cy={n.y} r="34" fill="var(--surface)" stroke="var(--tint)" strokeWidth="2"
-            animate={reduce ? undefined : { r: [34, 37, 34] }}
+            cx={n.x} cy={n.y} r="42" fill="var(--surface)" stroke="var(--tint)" strokeWidth="2"
+            animate={reduce ? undefined : { r: [42, 45, 42] }}
             transition={{ duration: 2.2, repeat: Infinity, delay: i * 0.45 + 1 }}
           />
-          <text x={n.x} y={n.y + 5} textAnchor="middle" fill="var(--ink)" fontSize="13" fontWeight="600">
-            {pick(projects[i].name)}
-          </text>
+          {(() => {
+            // one word per line so long names stay inside the circle
+            const words = pick(projects[i].name).split(' ');
+            const lh = 15;
+            const y0 = n.y + 4.5 - ((words.length - 1) * lh) / 2;
+            return (
+              <text textAnchor="middle" fill="var(--ink)" fontSize="13" fontWeight="600" fontFamily="Poppins">
+                {words.map((w, k) => (
+                  <tspan key={k} x={n.x} y={y0 + k * lh}>{w}</tspan>
+                ))}
+              </text>
+            );
+          })()}
         </motion.g>
       ))}
     </svg>

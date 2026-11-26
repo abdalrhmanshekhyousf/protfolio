@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 'bunyan',
     art: 'diagram',
-    name: { ar: 'بُنيان', en: 'Bunyan' },
+    name: { ar: 'Data Analytics', en: 'Data Analytics' },
     desc: {
       ar: 'بيحوّل وصف النظام لمتطلبات، مخططات UML، وتصميم قاعدة بيانات بالذكاء الاصطناعي.',
       en: 'Turns a system description into requirements, UML diagrams and a database design with AI.',
@@ -22,7 +22,7 @@ export const projects = [
   {
     id: 'nabd',
     art: 'heart',
-    name: { ar: 'نبض', en: 'Nabd' },
+    name: { ar: 'Nabd', en: 'Nabd' },
     desc: {
       ar: 'منصّة لإدارة المستشفيات، لحظية ومتعددة المستشفيات.',
       en: 'A real-time, multi-hospital management platform.',
@@ -40,7 +40,7 @@ export const projects = [
   {
     id: 'modir',
     art: 'receipt',
-    name: { ar: 'مدير', en: 'Modir' },
+    name: { ar: 'Modir', en: 'Modir' },
     desc: {
       ar: 'نظام نقاط بيع وإدارة للمحلات والمطاعم.',
       en: 'Point-of-sale and management system for shops and restaurants.',
